@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 20
+/svn/!svn/ver/2/jcgf
+END
+policy
+K 25
+svn:wc:ra_dav:version-url
+V 27
+/svn/!svn/ver/3/jcgf/policy
+END
+.classpath
+K 25
+svn:wc:ra_dav:version-url
+V 31
+/svn/!svn/ver/3/jcgf/.classpath
+END
+cgf.EAP
+K 25
+svn:wc:ra_dav:version-url
+V 28
+/svn/!svn/ver/3/jcgf/cgf.EAP
+END
+.project
+K 25
+svn:wc:ra_dav:version-url
+V 29
+/svn/!svn/ver/3/jcgf/.project
+END
+CGF.jude
+K 25
+svn:wc:ra_dav:version-url
+V 29
+/svn/!svn/ver/3/jcgf/CGF.jude
+END
+novo.eap
+K 25
+svn:wc:ra_dav:version-url
+V 29
+/svn/!svn/ver/3/jcgf/novo.eap
+END
+miglayout-3.7.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/!svn/ver/3/jcgf/miglayout-3.7.1.jar
+END
