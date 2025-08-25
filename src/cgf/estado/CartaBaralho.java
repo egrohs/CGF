@@ -8,16 +8,16 @@ import javax.swing.ImageIcon;
 
 import cgf.Constantes;
 import cgf.Jogo;
-import cgf.Constantes.Naipes;
+import cgf.Constantes.CardSuit;
 import cgf.Constantes.Valores;
 import cgf.visao.GUIPreferencias;
 
 public class CartaBaralho extends Zona {
     private Valores valor;
 
-    private Naipes naipe;
+    private CardSuit naipe;
 
-    public CartaBaralho(Valores valor, Naipes naipe) {
+    public CartaBaralho(Valores valor, CardSuit naipe) {
         super(valor.toString() + naipe, null, TipoZona.PUBLICA);
         this.valor = valor;
         this.naipe = naipe;
@@ -36,7 +36,7 @@ public class CartaBaralho extends Zona {
         String foto = "";
 
         if (!isVisivelPossui(Jogo.nomePlayer)) {
-            // Se a carta nao é visivel por esse player sua foto sera o virada.
+            // Se a carta nao ï¿½ visivel por esse player sua foto sera o virada.
             // g.drawImage(Constantes.DECK_BACK, 0, 0, null);
             foto = Constantes.DECK_BACK;
         } else {
@@ -67,11 +67,11 @@ public class CartaBaralho extends Zona {
         setSize(GUIPreferencias.deckX, GUIPreferencias.deckY);
     }
 
-    public Naipes getNaipe() {
+    public CardSuit getNaipe() {
         return naipe;
     }
 
-    public void setNaipe(Naipes naipe) {
+    public void setNaipe(CardSuit naipe) {
         this.naipe = naipe;
     }
 
@@ -92,12 +92,12 @@ public class CartaBaralho extends Zona {
     public Component add(Component comp) {
         if (!(comp instanceof Zona)) {
             // Nao deve fazer nada
-            System.err.println("Uma zona só pode ter filhos do tipo Zona!");
+            System.err.println("Uma zona sï¿½ pode ter filhos do tipo Zona!");
             return null;
         }
         if (this.getParent() == null) {
             // Nao deve fazer nada
-            System.err.println("Uma carta solta não pode receber filhos!");
+            System.err.println("Uma carta solta nï¿½o pode receber filhos!");
             return null;
         }
         int index = this.getParent().getComponentZOrder(this);
@@ -109,12 +109,12 @@ public class CartaBaralho extends Zona {
     public Component add(Component comp, int index) {
         if (!(comp instanceof Zona)) {
             // Nao deve fazer nada
-            System.err.println("Uma zona só pode ter filhos do tipo Zona!");
+            System.err.println("Uma zona sï¿½ pode ter filhos do tipo Zona!");
             return null;
         }
         if (this.getParent() == null) {
             // Nao deve fazer nada
-            System.err.println("Uma carta solta não pode receber filhos!");
+            System.err.println("Uma carta solta nï¿½o pode receber filhos!");
             return null;
         }
         // int index = this.getParent().getComponentZOrder(this);

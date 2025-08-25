@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-import cgf.Constantes.Naipes;
+import cgf.Constantes.CardSuit;
 import cgf.Constantes.Valores;
 import cgf.estado.CartaBaralho;
 import cgf.estado.EstadoJogo;
@@ -31,20 +31,20 @@ public class ZonaBuilder {
     }
 
     /**
-     * Cria uma zona com "qntCartas" cartas caso o estado passado não seja nulo
+     * Cria uma zona com "qntCartas" cartas caso o estado passado nï¿½o seja nulo
      * e possua um deck.
      * 
      * @param donos
      *            Donos da zona criada.
      * @param estado
-     *            Estado que possui o deck fonte de onde serão tiradas as cartas
-     *            para dar conteudo á zona criada.
+     *            Estado que possui o deck fonte de onde serï¿½o tiradas as cartas
+     *            para dar conteudo ï¿½ zona criada.
      * @param qntCartas
      *            Quantidade de cartas tiradas da fonte.
      * @param visivelPor
      *            Define quem podera ver a zona sera criada. //// *
      * @param tipoZona
-     *            Define quem serão os donos e por quem a zona sera visivel.
+     *            Define quem serï¿½o os donos e por quem a zona sera visivel.
      * @return
      */
     public static Zona buildZona(String nome, String[] donos, EstadoJogo estado, int qntCartas, TipoZona visivelPor) {
@@ -80,7 +80,7 @@ public class ZonaBuilder {
             for (Valores valor : Valores.values()) {
                 if (!Arrays.asList(removidas).contains(valor)) {
                     if (valor != Valores.CORINGA) {
-                        for (Naipes naipe : Naipes.values()) {
+                        for (CardSuit naipe : CardSuit.values()) {
                             CartaBaralho carta = new CartaBaralho(valor, naipe);
                             deck.add(carta);
                         }

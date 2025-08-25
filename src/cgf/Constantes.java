@@ -8,7 +8,7 @@ public class Constantes {
 	// TODO nao sera uma constante, sera definida pelo tipo de deck.
 	public static final String DECK_BACK = "b1fv.gif";
 
-	public static enum Naipes {
+	public static enum CardSuit {
 		OUROS, PAUS, COPAS, ESPADAS;
 	}
 
