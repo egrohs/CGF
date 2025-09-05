@@ -2,9 +2,9 @@ package aplicacao;
 
 import com.badlogic.gdx.utils.Array;
 
-import bgf.Player;
-import bgf.rules.turn.TurnStrategy;
-import bgf.rules.turn.TurnStrategyType;
+import ttgdx.Player;
+import ttgdx.rules.turn.TurnStrategy;
+import ttgdx.rules.turn.TurnStrategyType;
 
 // Exemplo de estratégia personalizada
 public class CustomTurnStrategy implements TurnStrategy {
