@@ -1,0 +1,88 @@
+{
+    "SaveName": "Five Tribes [Fully Scripted]",
+    "EpochTime": 1755544246,
+    "Date": "8/18/2025 4:10:46 PM",
+    "VersionNumber": "v13.3",
+    "GameMode": "Five Tribes [Fully Scripted]",
+    "GameType": "Game",
+    "TYPES": "",
+    "CATEGORIES": "",
+    "mechanisms": [
+        "AreaControl",
+        "ModularBoard",
+        "SetCollection",
+        "VariablePlayerPowers"
+    ],
+    "TurnOrder": "Progressive",
+    "OBJETIVOS": "VictoryPoints",
+    "FAMILY": "",
+    "REIMPLEMENTS": "",
+    "DESCRIPTION": "",
+    "RANK": 0,
+    "RATED": 0,
+    "YEAR": 2014,
+    "NAME": "Five Tribes",
+    "WEIGH": "Medium Complexity",
+    "PlayingTime": [
+        30,
+        120
+    ],
+    "PlayerCounts": [
+        1,
+        5
+    ],
+    "Tags": [
+        "Cards",
+        "Components"
+    ],
+    "ESTADO": {
+        "TurnOrderColor": "White",
+        "TURNO": 0,
+        "Notes": {},
+        "players": [
+            {
+                "Color": "White",
+                "Name": "Player1",
+                "GUID": "a1b2c3",
+                "SteamID": "",
+                "IsActive": true,
+                "IsGM": false,
+                "Notes": "",
+                "VictoryPoints": 0,
+                "HAND": {}
+            }
+        ],
+        "zonas": [
+            {
+                "GUID": "6b2481",
+                "Name": "HandTrigger",
+                "Nickname": "",
+                "Description": "",
+                "GMNotes": "",
+                "LayoutGroupSortIndex": 0,
+                "Value": 0,
+                "Locked": true,
+                "Grid": false,
+                "Snap": true,
+                "IgnoreFoW": false,
+                "MeasureMovement": false,
+                "DragSelectable": true,
+                "Autoraise": true,
+                "Sticky": true,
+                "Tooltip": true,
+                "GridProjection": false,
+                "HideWhenFaceDown": false,
+                "Hands": false,
+                "FogColor": "Pink",
+                "LuaScript": "",
+                "LuaScriptState": "",
+                "XmlUI": "",
+                "CHILDREN": []
+            },
+            {
+                "GUID": "26284a",
+                "Name": "HandTrigger"
+            }
+        ]
+    }
+}

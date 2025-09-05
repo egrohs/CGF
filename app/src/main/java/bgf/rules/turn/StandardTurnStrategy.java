@@ -1,0 +1,37 @@
+package bgf.rules.turn;
+
+import com.badlogic.gdx.utils.Array;
+
+import bgf.Player;
+
+// StandardTurnStrategy.java - Sequência padrão de turnos
+public class StandardTurnStrategy implements TurnStrategy {
+    private Array<Player> players;
+    private int currentIndex;
+    
+    @Override
+    public void initialize(Array<Player> players) {
+        this.players = new Array<>(players);
+        this.currentIndex = 0;
+    }
+    
+    @Override
+    public Player getNextPlayer() {
+        return players.get(currentIndex);
+    }
+    
+    @Override
+    public void nextTurn() {
+        currentIndex = (currentIndex + 1) % players.size;
+    }
+    
+    @Override
+    public Array<Player> getTurnOrder() {
+        return players;
+    }
+    
+    @Override
+    public TurnStrategyType getType() {
+        return TurnStrategyType.STANDARD;
+    }
+}

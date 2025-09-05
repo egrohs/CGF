@@ -12,3 +12,4 @@ plugins {
 
 rootProject.name = 'CGF'
 include('app')
+include('escova')
